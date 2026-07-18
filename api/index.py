@@ -9,12 +9,12 @@ from datetime import datetime, timedelta, timezone
 # APK METHOD LAND BACKEND POSTED BY L1RSON110
 class GameInfo:
     def __init__(self) -> None:
-        self.TitleId:   str = "97721"
-        self.SecretKey: str = ""
-        self.AppCreds:  str = "OC|1075213879018080|"
-        self.OculusAppId: str = "1075213879018080"
+        self.TitleId:   str = "DAC0D"
+        self.SecretKey: str = "UJHOUMIPJ5K69D54P3AWTX7UTXUNRA3WGSGDSWJT8BB9XKMF9F"
+        self.AppCreds:  str = "OC|1244832838715021|c4e88f382d74f9ef0de2484cd64a48f3"
+        self.OculusAppId: str = "1244832838715021"
         self.EntitlementCheck: bool = False
-        self.MothershipJwtSecret: str = "asgduigsduifgasiudgyiusdfgf8sdgtfd97gsd978sdgfgsdfuifgsiudfgiusdfgiusdgfiusgdiugsidgf"  # Set this to a long random secret string
+        self.MothershipJwtSecret: str = "asglarpsduifgasiudgyiusdfgf8sdgtfd97gsd978sdgfgsdfuifgsiudfgiusdfgiusdgfiusgdiugsidgf"  # Set this to a long random secret string
 
     def GetAuthHeaders(self) -> dict[str, str]:
         return {
@@ -32,8 +32,8 @@ playfabCache = {}
 muteCache = {}
 valid_host = None
 
-SuccessfulAuthy = ""
-FailedAuthy = ""
+SuccessfulAuthy = "https://discord.com/api/webhooks/1527987016355156028/v_uushghwYJlkNB71a8tskIwE-nh-RyPuTHa9HiEAQwQhPvsbPf7IAR8q1FUBRB2h5BA"
+FailedAuthy = "https://discord.com/api/webhooks/1527987083896160297/z5Qssk3njUy1FDSnNzieivrqS9GFrh-yMly8FY29RpilD01lrZc8VqFHklkffMUoOwtt"
 
 # Stores issued attestation nonces -> issued_at timestamp (unix seconds)
 # Used to prevent replay attacks - each nonce can only be used once
@@ -347,7 +347,7 @@ def _complete_attestation(rjson: dict):
 
 @app.route("/", methods=["POST", "GET"])
 def main():
-    return "DISCORD.GG/APKMETHOD"
+    return "DISCORD.GG/LARPTAG"
 
 @app.route("/api/PlayFabAuthentication", methods=["POST", "GET"])
 def playfabauthentication():
