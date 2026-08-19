@@ -11,10 +11,10 @@ class GameInfo:
     def __init__(self) -> None:
         self.TitleId:   str = ""
         self.SecretKey: str = ""
-        self.AppCreds:  str = "||"
-        self.OculusAppId: str = ""
+        self.AppCreds:  str = "OC|1075213879018080|"
+        self.OculusAppId: str = "1075213879018080"
         self.EntitlementCheck: bool = False
-        self.MothershipJwtSecret: str = "asglarpsduifgasiudgyiusdfgf8sdgtfd97gsd978sdgfgsdfuifgsiudfgiusdfgiusdgfiusgdiugsidgf"  # Set this to a long random secret string
+        self.MothershipJwtSecret: str = ""  # Set this to a long random secret string
 
     def GetAuthHeaders(self) -> dict[str, str]:
         return {
@@ -32,8 +32,8 @@ playfabCache = {}
 muteCache = {}
 valid_host = None
 
-SuccessfulAuthy = "https://discord.com/api/webhooks/1527987016355156028/v_uushghwYJlkNB71a8tskIwE-nh-RyPuTHa9HiEAQwQhPvsbPf7IAR8q1FUBRB2h5BA"
-FailedAuthy = "https://discord.com/api/webhooks/1527987083896160297/z5Qssk3njUy1FDSnNzieivrqS9GFrh-yMly8FY29RpilD01lrZc8VqFHklkffMUoOwtt"
+SuccessfulAuthy = ""
+FailedAuthy = ""
 
 # Stores issued attestation nonces -> issued_at timestamp (unix seconds)
 # Used to prevent replay attacks - each nonce can only be used once
@@ -347,7 +347,7 @@ def _complete_attestation(rjson: dict):
 
 @app.route("/", methods=["POST", "GET"])
 def main():
-    return "DISCORD.GG/LARPTAG"
+    return "DISCORD.GG/APKMETHOD"
 
 @app.route("/api/PlayFabAuthentication", methods=["POST", "GET"])
 def playfabauthentication():
@@ -672,22 +672,22 @@ def titledata():
             "Elder", "Honey", "Nurse", "Doctor", "Rebel", 
             "Shape", "Ally", "Driver", "Deputy"
         ],
-        "BundleBoardSign": "<color=#ff4141>DISCORD.GG/LARPTAG</color>",
-        "BundleKioskButton": "<color=#ff4141>DISCORD.GG/LARPTAG</color>",
-        "BundleKioskSign": "<color=#ff4141>DISCORD.GG/LARPTAG/</color>",
-        "BundleLargeSign": "<color=#ff4141>DISCORD.GG/LARPTAG</color>",
+        "BundleBoardSign": "<color=#ff4141>discord.gg/VKFuNbHvtH</color>",
+        "BundleKioskButton": "<color=#ff4141>discord.gg/VKFuNbHvtH</color>",
+        "BundleKioskSign": "<color=#ff4141>discord.gg/VKFuNbHvtH/</color>",
+        "BundleLargeSign": "<color=#ff4141>discord.gg/VKFuNbHvtH</color>",
         "EmptyFlashbackText": "FLOOR TWO NOW OPEN\n FOR BUSINESS\n\nSTILL SEARCHING FOR\nBOX LABELED 2021",
         "EnableCustomAuthentication": True,
         "GorillanalyticsChance": 4320,
         "LatestPrivacyPolicyVersion": "2024.09.20",
         "LatestTOSVersion": "2024.09.20",
-        "MOTD": "<color=orange>WELCOME TO LARP TAG MAKE SURE TO JOIN THE DISCORD SERVER</color>  <color=green>HAVE FUN!</color>  <color=red>CREDITS TO HARMONY</color>  <color=red>HAVE A NICE DAY!</color>  <color=yellow>IF YOU ENJOY THE GAME, PLEASE GIVE IT  (5 STARS)!</color> <color=yellow>DISCORD.GG/LARPTAG</color>",
-        "SeasonalStoreBoardSign": "<color=#ff7241>SUMMER!</color>",
-        "TOS_2024.09.20": "DISCORD.GG/LARPTAG",
-        "TOBAlreadyOwnCompTxt": "DISCORD.GG/LARPTAG",
-        "TOBAlreadyOwnPurchaseBundle": "DISCORD.GG/LARPTAG",
-        "TOBDefCompTxt": "DISCORD.GG/LARPTAG",
-        "TOBDefPurchaseBtnDefTxt": "DISCORD.GG/LARPTAG",
+        "MOTD": "<color=orange>WELCOME TO BLAWG TAGZ</color>  <color=green>HAVE FUN!</color>  <color=red>CREDITS TO HARLUM BRAZI</color>  <color=red>GAME GOT SHUT DOWN ON APP LAB BUT WILL COME BACK ON MONDAY THE PROVET APP LAB IS OPEN SO GAME IS STILL ACTIVE!</color>  <color=yellow>IF YOU ENJOY THE GAME, PLEASE GIVE IT  (5 STARS)!</color> <color=yellow>https://discord.gg/aDhrFgNrxt</color>",
+        "SeasonalStoreBoardSign": "<color=#ff7241>FALL!</color>",
+        "TOS_2024.09.20": "discord.gg/VKFuNbHvtH",
+        "TOBAlreadyOwnCompTxt": "discord.gg/VKFuNbHvtH",
+        "TOBAlreadyOwnPurchaseBundle": "BLABLABLA",
+        "TOBDefCompTxt": "discord.gg/VKFuNbHvtH",
+        "TOBDefPurchaseBtnDefTxt": "BLABLABLA",
         "UseLegacyIAP": False
         
     }
